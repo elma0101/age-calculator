@@ -1,0 +1,95 @@
+:root{
+  --main_color: hsl(259, 100%, 65%);
+  --secondary_color:hsl(0, 100%, 67%);
+  --third_color:hsl(0, 0%, 94%);
+  --fourth_color:hsl(0, 0%, 86%);
+  --fifth_color:hsl(0, 1%, 44%);
+  --sixth_color:hsl(0, 0%, 8%);
+}
+
+/*Start global rules*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--third_color);
+}
+
+/*End global rules*/
+
+/*Start landing */
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.container .block  {
+    background-color: white;
+    border-radius: 20px 20px 100px 20px;
+    padding: 20px;
+    width: 600px;
+}
+
+
+
+.container .block .date p{
+    display: inline-block;
+    padding-right: 98px;
+}
+
+.container .block .date p:nth-last-of-type(2){
+    padding-right: 78px;
+}
+
+
+.container .block .input{
+    padding: 10px   ;  
+    padding-top: 10px;
+    width: 110px;
+    margin-right: 18px;
+}
+
+.container .block #submit{
+    background-color: lightgrey;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.container .block #submit:hover{
+    cursor: pointer;
+    background-color: var(--main_color);
+    transition: 0.5s;
+}
+.container .block .date2 p{
+    font-size: 60px;
+    font-weight: 1000;
+    line-height:  25px;
+}
+
+
+form{
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.container .block p{
+   
+    display: inline;
+}
+
+.container .block .new{
+    color: var(--main_color);
+}
+/*End landing*/

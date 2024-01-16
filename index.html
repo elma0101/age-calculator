@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <title>Age calculator</title>
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <div class="container">
+        <div class="block">
+            <div class="date">
+                <p>Day</p>
+                <p>Month</p>
+                <p>Year</p>
+            </div>
+
+            <form action="">
+                <input type="number" id="Day1" class="input">
+                <input type="number" id="Month1" class="input">
+                <input type="number" id="Year1" class="input">
+                <input type="submit" value="calculate" onclick="set_age()" class="input" id="submit">
+            </form>
+            <img src="/icon-arrow.svg" alt="arrow">
+            <div class="date2">
+                <p id="Year" class="new"></p>
+                <p>years</p><br><br><br>
+                <p id="Month" class="new"></p>
+                <p>months</p><br><br><br>
+                <p id="Day" class="new"></p>
+                <p>days</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
