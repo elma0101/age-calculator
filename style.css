@@ -71,6 +71,9 @@ body {
     background-color: var(--main_color);
     transition: 0.5s;
 }
+.container .block .date2{
+    padding-top: 50px;
+}
 .container .block .date2 p{
     font-size: 60px;
     font-weight: 1000;
