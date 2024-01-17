@@ -39,7 +39,11 @@ body {
     width: 600px;
 }
 
-
+.container .block .date{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fifth_color);
+}
 
 .container .block .date p{
     display: inline-block;
@@ -49,13 +53,25 @@ body {
 .container .block .date p:nth-last-of-type(2){
     padding-right: 78px;
 }
-
+.container .block #error{
+    color: rgb(252, 0, 0);
+}
 
 .container .block .input{
     padding: 10px   ;  
     padding-top: 10px;
     width: 110px;
     margin-right: 18px;
+    border-radius: 5px;
+    outline: none;
+  
+}
+input{
+    border: 1px solid hsl(0, 1%, 44%);
+}
+input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+
 }
 
 .container .block #submit{
@@ -71,6 +87,7 @@ body {
     background-color: var(--main_color);
     transition: 0.5s;
 }
+
 .container .block .date2{
     padding-top: 50px;
 }
