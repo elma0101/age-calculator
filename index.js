@@ -25,10 +25,7 @@ function set_age() {
     month1 = parseInt(document.getElementById('Month1').value);
     year1 = parseInt(document.getElementById('Year1').value);
 
-    console.log(year1);
-    console.log(month1);
-    console.log(day1);
-
+    
     if (year1 >= 1900 && year1 < current_year && month1 >= 1 && month1 <= 12 && day1 >= 1 && day1 <= 31) {
 
         if (month1 == 1 || month1 == 3 || month1 == 5 || month1 == 7 || month1 == 8 || month1 == 10 || month1 == 12)
