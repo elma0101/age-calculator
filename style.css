@@ -18,7 +18,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--third_color);
+  
 }
+
+
 
 /*End global rules*/
 
@@ -29,42 +32,56 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    margin-top: 120px;
 }
 
 .container .block  {
     background-color: white;
     border-radius: 20px 20px 100px 20px;
-    padding: 20px;
-    width: 600px;
+    padding: 50px;
+    width: 630px;
+    
+}
+.container .block .values{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+form{
+    padding-bottom: 50px;
+    border-bottom: 1px solid lightgrey;
+   
 }
 
-.container .block .date{
+
+.container .block label{
+    
     font-size: 16px;
     font-weight: 600;
     color: var(--fifth_color);
+    
 }
 
-.container .block .date p{
-    display: inline-block;
-    padding-right: 98px;
-}
-
-.container .block .date p:nth-last-of-type(2){
-    padding-right: 78px;
-}
 .container .block #error{
     color: rgb(252, 0, 0);
+   
+      
 }
 
-.container .block .input{
-    padding: 10px   ;  
+.container .block .group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.container .block  .group .input{
+    padding: 10px ;  
     padding-top: 10px;
     width: 110px;
-    margin-right: 18px;
+    margin-right: 20px;
     border-radius: 5px;
     outline: none;
-  
 }
 input{
     border: 1px solid hsl(0, 1%, 44%);
@@ -98,12 +115,6 @@ input:focus{
 }
 
 
-form{
-    padding-bottom: 50px;
-    border-bottom: 1px solid lightgrey;
-}
-
-
 .container .block p{
    
     display: inline;
@@ -113,3 +124,10 @@ form{
     color: var(--main_color);
 }
 /*End landing*/
+
+@media  (max-width:650px) {
+    .container .block {
+        width: 400px;
+        margin: 50px;
+    }
+}
